@@ -1,0 +1,30 @@
+{
+  "name": "motd_api",
+  "version": "1.0.0",
+  "description": "为LL3提供motd的接口和papi变量",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zimuya4153/MotdAPI.git"
+  },
+  "keywords": [
+    "LeviLamina",
+    "nodejs",
+    "motd",
+    "LSE",
+    "LegacyScriptEngine"
+  ],
+  "author": "小小的子沐呀",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/zimuya4153/MotdAPI/issues"
+  },
+  "homepage": "https://github.com/zimuya4153/MotdAPI#readme",
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "uuid": "^9.0.1"
+  }
+}
