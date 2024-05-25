@@ -23,7 +23,7 @@
     "files": {
         "place": [
             {
-                "src": "*",
+                "src": "MotdAPI/*",
                 "dest": "plugins/MotdAPI"
             }
         ]
