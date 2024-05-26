@@ -20,6 +20,7 @@
 
 | 属性       | 含义                            |
 | ---------- | ------------------------------- |
+| IP         | IP 地址                         |
 | Name       | 服务器名称                      |
 | Protocol   | 协议版本                        |
 | Version    | 服务器版本                      |
@@ -67,6 +68,7 @@
 
 ```json
 {
+    "IP": "127.0.0.1",
     "Online": 0,
     "timer": -1,// 这个就不用管呐~什么你好奇？不告诉你，嘿嘿٩(๑>◡<๑)۶
     "Name": "Dedicated Server",
@@ -116,7 +118,15 @@ ll.import('MotdAPI','StopGetServerMotd')(IP,Port);// 最后停止
 > 依次输入以下命令就行啦~
 
 `jsdebug` - 进入 jsdebug 调试模式  
-`let IP = 'IP地址',Port = 端口;` - 定义 IP 和端口，下面就不用麻烦的改啦٩(๑>◡<๑)۶  
+`let IP = 'IP地址',Port = 端口;` - 定义 IP 和端口，下面就不用麻烦的改啦 ٩(๑>◡<๑)۶  
 `ll.import('MotdAPI','StartGetServerMotd')(IP,Port);` - 开始获取信息  
 `ll.import('MotdAPI','GetServerMotd')(IP,Port)` - 获取信息  
 `jsdebug` - 退出 jsdebug 调试模式咯~
+
+<details>  
+  <summary>没人看的更新日志</summary>  
+  - v1.0.0<br>
+     插件发布<br>
+  - v1.1.0<br>
+     增加次数超时功能，获取次数超过5次则停止获取
+</details>
