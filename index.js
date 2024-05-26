@@ -15,7 +15,6 @@ let MotdData = {};
  */
 function StartGetServerMotd(ip, port, time = 1000, errorCount = 0) {
     if (MotdData[`${ip}_${port}`]) clearTimeout(MotdData[`${ip}_${port}`].timer);
-    log(new Date().toTimeString(), errorCount)
     if (errorCount >= 5) return StopGetServerMotd(ip, port);
     const UpdateMotaData = () => {
         try {
